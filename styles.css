@@ -1,30 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-    --paragraph: rgba(82, 82, 82, 1);
-    --white: rgba(255, 255, 255, 1);
-    --accent-1: rgba(47, 185, 93, 1);
-    --accent-2: rgba(4, 58, 58, 1);
-    --main-text-p1-400-font-family: 'Montserrat', sans-serif;
-    --main-text-p1-400-font-weight: 500;
-    --main-text-p1-400-font-size: 16px;
-    --main-text-p1-400-letter-spacing: 0px;
-    --main-text-p1-400-line-height: 24px;
-    --main-text-p1-400-font-style: normal;
-    --drop-shadow: 18px 15px 35px 0px rgba(0, 0, 0, 0.09);
-    --drop-shadow-2: -13px 18px 35px 0px rgba(0, 0, 0, 0.09);
-  }
+  --paragraph: rgba(82, 82, 82, 1);
+  --white: rgba(255, 255, 255, 1);
+  --accent-1: rgba(47, 185, 93, 1);
+  --accent-2: rgba(4, 58, 58, 1);
+  --main-text-p1-400-font-family: "Montserrat", sans-serif;
+  --main-text-p1-400-font-weight: 500;
+  --main-text-p1-400-font-size: 16px;
+  --main-text-p1-400-letter-spacing: 0px;
+  --main-text-p1-400-line-height: 24px;
+  --main-text-p1-400-font-style: normal;
+  --main-margin-left: 50px;
+  --drop-shadow: 18px 15px 35px 0px rgba(0, 0, 0, 0.09);
+  --drop-shadow-2: -13px 18px 35px 0px rgba(0, 0, 0, 0.09);
+}
 
-  a {
-    color: inherit;
-    text-decoration: none; 
-  }
-  
-  a:hover {
-    text-decoration: underline; 
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  body {
-    font-family: 'Montserrat', sans-serif;
-    padding-inline: 1rem;
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+  /* padding-inline: 1rem; */
+}
+
+.sections {
+  padding-inline: 2.5rem;
+  margin-bottom: 2.5rem;
+
 }
 
 input {
@@ -41,44 +52,22 @@ textarea {
   border: none;
   outline: none;
   resize: none; /* Prevent resizing */
-  padding: 0; /
-  margin: 0; 
-  font-family: inherit; 
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
   font-size: inherit;
-  background: transparent; /
+  background: transparent;
   overflow: auto; /* Enable scrolling for long content */
 }
 
 /* CSS - Desktop */
 
-
-.agriguard-landing {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .agriguard-landing .div {
-    background-color: #ffffff;
-    overflow: hidden;
-    width: 1440px;
-    height: 8685px;
-    position: relative;
-  }
-  
-  .agriguard-landing .overlap {
-    width: 1440px;
-    height: 820px;
-  }
-
-  .header-nav {
-    display: flex;
-    justify-content: flex-end; 
-    align-items: center;
-    padding: 5px;
-    margin-top: 20px;
+.header-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* padding: 5px; */
+  margin-top: 20px;
 }
 
 .header-links {
@@ -88,28 +77,24 @@ textarea {
 
 .header-links .header-link {
   align-self: center;
-  color: #1E1E1E;
+  color: #1e1e1e;
   font-size: 25px;
   font-style: normal;
   line-height: normal;
 }
 
 .header-link {
-  font-family: "Raleway-SemiBold", Helvetica;
   font-weight: 200;
   color: #1e1e1e;
   font-size: 25px;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
-
 }
 
 .agriguard-landing .header-logo-text {
-
   font-size: 28px;
   letter-spacing: 2.8px;
-  font-family: "Montserrat-Bold", Helvetica;
   font-weight: 700;
   color: #2eb85c;
   line-height: normal;
@@ -119,38 +104,36 @@ textarea {
 
 .header-button {
   display: flex;
-background-color: var(--accent-1);
-align-items: center;
-padding: 12px 24px;
-border-radius: 10px;
-overflow: hidden;
-border: none;
-color: white;
-font-size: 18px;
-font-family: "Raleway-SemiBold", Helvetica;
-font-weight: 200;
+  background-color: var(--accent-1);
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
 }
 
-  .hero-section {
-    display: flex;
-    align-items: center;
+.hero-section {
+  display: flex;
+  align-items: center;
 }
 
 .hero-content {
   flex: 1;
-  padding-right: 20px; 
+  padding-right: 20px;
 }
 
 .hero-text {
   font-size: 70px;
-  font-family: "Montserrat-Bold", Helvetica;
   font-weight: 700;
   letter-spacing: 0;
-  line-height: 90px;}
+  line-height: 90px;
+}
 
 .hero-subtitle {
-  margin-top: 10px; 
-  font-family: "Montserrat-Light", Helvetica;
+  margin-top: 10px;
   font-weight: 100;
   color: var(--accent-2);
   font-size: 35px;
@@ -159,7 +142,7 @@ font-weight: 200;
 }
 
 .hero-buttons {
-  margin-top: 20px; 
+  margin-top: 20px;
   display: flex;
 }
 
@@ -172,7 +155,7 @@ font-weight: 200;
   cursor: pointer;
   display: flex;
   align-items: center;
-  overflow: hidden;    
+  overflow: hidden;
   margin-right: 10px;
 }
 
@@ -189,701 +172,520 @@ font-weight: 200;
   margin-left: 10px;
 }
 
-
 .farm-hero-img {
-  width: 600px; 
-  height: auto; 
+  width: 600px;
+  height: auto;
 }
 
-  .agriguard-landing .story-suffix {
-    color: #2eb85c;
-  }
-  
+.agriguard-landing .story-suffix {
+  color: #2eb85c;
+}
 
-  .agriguard-landing .hero-text-dark {
-    color: var(--accent-2);
-  }
-  
-  .agriguard-landing .hero-text-light {
-    color: #2eb85c;
-  }
-  
-  .agriguard-landing .img {
-    width: 566px;
-    height: 725px;
-    object-fit: cover;
-  }
-  
-  .agriguard-landing .button1 {
-    all: unset;
-    box-sizing: border-box;
-    width: 204px;
-    background-color: var(--accent-1);
-    display: flex;
-    align-items: center;
-    padding: 24px 40px;
-    border-radius: 100px;
-    overflow: hidden;
-  }
+.agriguard-landing .hero-text-dark {
+  color: var(--accent-2);
+}
 
-  .agriguard-landing .button-text {
-    position: relative;
-    flex: 1;
-    margin-top: -1px;
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 600;
-    color: var(--white);
-    font-size: 21px;
-    letter-spacing: 0;
-    line-height: 24px;
-  }
+.agriguard-landing .hero-text-light {
+  color: #2eb85c;
+}
 
-  .agriguard-landing .title {
-    width: 100%;
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 400;
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 74.9px;
-    margin-top: 50px;
-  }
-  
-  .agriguard-landing .title-text-light {
-    color: #2eb85c;
-  }
+.agriguard-landing .button1 {
+  all: unset;
+  box-sizing: border-box;
+  width: 204px;
+  background-color: var(--accent-1);
+  display: flex;
+  align-items: center;
+  padding: 24px 40px;
+  border-radius: 100px;
+  overflow: hidden;
+}
 
-  .agriguard-landing .title-text-dark {
-    color: var(--accent-2);
-  }
-  
-  .agriguard-landing .sub-title {
-    width: 625px;
-    font-family: "Montserrat-Regular", Helvetica;
-    font-weight: 200;
-    color: #1e1e1e;
-    font-size: 24px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 24px;
-  }
+.agriguard-landing .button-text {
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-weight: 600;
+  color: var(--white);
+  font-size: 21px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
 
-  .agriguard-landing .subtitle {
-    width: 70%;
-    font-family: "Montserrat-Regular", Helvetica;
-    font-weight: 200;
-    color: var(--accent-2);
-    font-size: 24px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 30px;
-    margin-bottom: 50px;
-  }
-  
-  .agriguard-landing .problem-text {
-    font-family: "Montserrat-Bold", Helvetica;
-    font-weight: 200;
-    color: var(--accent-2);
-    font-size: 45px;
-    text-align: center;
-    letter-spacing: 0;
-    width: fit-content;
-    margin-bottom: 50px;
-  }
-  
-  .agriguard-landing .problem-text-bold {
-    font-weight: 700;
-  }
-  
-  .agriguard-landing .problem-text-light {
-    font-family: "Montserrat-Regular", Helvetica;
-  }
-  
-  .agriguard-landing .footer {
-    width: 1476px;
-    height: 586px;
-    background-color: #204e51;
-    margin-top: 60px;
-  }
-  
-  .agriguard-landing .text-wrapper-17 {
-    font-family: "Montserrat-Bold", Helvetica;
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 28px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .agriguard-landing .text-wrapper-18 {
-    font-family: "Montserrat-Bold", Helvetica;
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 28px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .agriguard-landing .group {
-    width: 96px;
-    height: 310px;
-  }
-  
-  .agriguard-landing .footer-link {
-    font-family: "Raleway-Regular", Helvetica;
-    font-weight: 400;
-    color: #ffffff;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
-  .agriguard-landing .agriguard-is-a-wrapper {
-    width: 474px;
-    height: 96px;
-  }
-  
-  .agriguard-landing .agriguard-is-a {
-    width: 440px;
-    font-family: "Raleway-Light", Helvetica;
-    font-weight: 200;
-    color: #ffffff;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 24px;
-  }
-  
-  .agriguard-landing .icon {
-    width: 160px;
-    height: 40px;
-  }
-  
-  .agriguard-landing .social-links {
-    position: relative;
-    height: 40px;
-    display: flex;
-  }
-  
-  .agriguard-landing .social-link {
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    margin: 5px;
-  }
-  
-  .agriguard-landing .email {
-    display: flex;
-    width: 293px;
-    align-items: center;
-    gap: 8px;
-  }
-  
-  .agriguard-landing .info-agriguard-org {
-    position: relative;
-    flex: 1;
-    margin-top: -1px;
-    font-family: "Mulish-Medium", Helvetica;
-    font-weight: 500;
-    color: var(--white);
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 24px;
-    background: transparent;
-    border: none;
-    padding: 0;
-  }
-  
-  .agriguard-landing .location {
-    display: flex;
-    width: 293px;
-    align-items: center;
-    gap: 8px;
-  }
-  
-  .agriguard-landing .group-6 {
-    position: relative;
-    width: 16px;
-    height: 16px;
-  }
-  
-  .agriguard-landing .MEST-africa {
-    position: relative;
-    width: 336px;
-    margin-top: -1px;
-    margin-right: -67px;
-    font-family: "Mulish-Medium", Helvetica;
-    font-weight: 500;
-    color: var(--white);
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 24px;
-  }
-  
-  .agriguard-landing .tel {
-    display: flex;
-    width: 293px;
-    align-items: center;
-    gap: 8px;
-  }
-  
-  .agriguard-landing .text-wrapper-26 {
-    position: relative;
-    flex: 1;
-    margin-top: -1px;
-    font-family: "Mulish-Medium", Helvetica;
-    font-weight: 500;
-    color: var(--white);
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 24px;
-  }
-  
-  .agriguard-landing .problem-callout {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 40px;
-    background-color: var(--accent-2);
-    border-radius: 0px 0px 24px 24px;
-    overflow: hidden;
+.agriguard-landing .title {
+  width: 100%;
+  font-weight: 400;
+  font-size: 72px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 74.9px;
+  margin-top: 50px;
+}
+
+.agriguard-landing .title-text-light {
+  color: #2eb85c;
+  font-weight: var(--main-text-p1-400-font-weight);
+}
+
+.agriguard-landing .title-text-dark {
+  color: var(--accent-2);
+  font-weight: var(--main-text-p1-400-font-weight);
+}
+
+.agriguard-landing .sub-title {
+  width: 625px;
+  font-weight: 200;
+  color: #1e1e1e;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.agriguard-landing .subtitle {
+  width: 70%;
+  font-weight: 200;
+  color: var(--accent-2);
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-bottom: 50px;
+  margin-inline: auto;
+}
+
+.agriguard-landing .problem-text {
+  font-weight: 200;
+  color: var(--accent-2);
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 0;
+  width: fit-content;
+  margin-bottom: 50px;
+}
+
+.agriguard-landing .problem-text-bold {
+  font-weight: 700;
+}
+
+.agriguard-landing .footer {
+  background-color: #204e51;
+  margin-top: 60px;
+}
+
+.agriguard-landing .text-wrapper-17 {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.agriguard-landing .text-wrapper-18 {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.agriguard-landing .footer-link {
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.agriguard-landing .agriguard-is-a {
+  width: 440px;
+  font-weight: 200;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.agriguard-landing .social-links {
+  display: flex;
+  width: fit-content;
+}
+
+.agriguard-landing .social-link {
+  border-radius: 5px;
+  margin: 5px;
+}
+
+
+.agriguard-landing .tel {
+  display: flex;
+  width: 293px;
+  align-items: center;
+  gap: 8px;
+}
+
+.agriguard-landing .text-wrapper-26 {
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-weight: 500;
+  color: var(--white);
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.agriguard-landing .problem-callout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: var(--accent-2);
+  border-radius: 0px 0px 24px 24px;
+  overflow: hidden;
+  margin-inline: 2.5rem;
 }
 
 .agriguard-landing .callout-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
 }
 
 .agriguard-landing .element {
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 600;
-    color: transparent;
-    font-size: 50px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 56px;
-    margin-bottom: 0px;
+  font-weight: 600;
+  color: transparent;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 56px;
+  margin-bottom: 0px;
 }
 
 .agriguard-landing .problem-highlight {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .agriguard-landing .problem-subtitle {
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 200;
-    color: var(--white);
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: var(--main-text-p1-400-letter-spacing);
-    line-height: var(--main-text-p1-400-line-height);
-    font-style: var(--main-text-p1-400-font-style);
+  font-weight: 200;
+  color: var(--white);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: var(--main-text-p1-400-letter-spacing);
+  line-height: var(--main-text-p1-400-line-height);
+  font-style: var(--main-text-p1-400-font-style);
 }
-  
-  .agriguard-landing .vector {
-    position: relative;
-    width: 1px;
-    height: 72px;
-  }
-  
-  .agriguard-landing .frame {
-    flex-direction: column;
-    align-items: flex-start;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-    display: flex;
-    position: relative;
-  }
-  
-  .agriguard-landing .text-2 {
-    display: flex;
-    flex-direction: column;
-    height: 208px;
-    align-items: flex-start;
-    gap: 16px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-  }
- 
-  .agriguard-landing .vector-2 {
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    height: 1px;
-    margin-left: -0.5px;
-    margin-right: -0.5px;
-    object-fit: cover;
-  }
 
-  .agriguard-landing .button-2 {
-    all: unset;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px 40px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-    background-color: var(--white);
-    border-radius: 100px;
-    overflow: hidden;
-  }
-  
-  .agriguard-landing .text-wrapper-34 {
-    position: relative;
-    flex: 1;
-    margin-top: -1px;
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 600;
-    color: var(--accent-1);
-    font-size: 21px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 24px;
-  }
-  
-  .agriguard-landing .text-wrapper-35 {
-    position: relative;
-    flex: 1;
-    margin-top: -1px;
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 600;
-    color: var(--accent-2);
-    font-size: 21px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 24px;
-  }
-  
-  .agriguard-landing .text-4 {
-    display: flex;
-    flex-direction: column;
-    width: 746px;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 24px;
-  }
+.agriguard-landing .vector {
+  position: relative;
+  width: 1px;
+  height: 72px;
+}
 
-  .faq-row {
-    display: flex !important;
-    margin-top: 30px;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
-  }
-
-  .faq-container {
-    margin-top: 30px;
-    display: flex;
-  }
-  
-  .agriguard-landing .faq-box {
-    padding: 40px;
-    display: flex;
-    width: 100%;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 16px;
-    background-color: var(--white);
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: var(--drop-shadow);
-    flex: 1 0 45%;
-    margin-right: 20px; 
-    margin-bottom: 20px; 
-    height: 200px;
-  }
-  
-  .agriguard-landing .faq-icon {
-    position: relative;
-    width: 40px;
-    height: 40px;
-  }
-  
-  .agriguard-landing .frame-6 {
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    flex: 1;
-    flex-grow: 1;
-    display: flex;
-    position: relative;
-  }
-  
-  .agriguard-landing .frame-7 {
-    align-items: flex-start;
-    gap: 16px;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-    display: flex;
-    position: relative;
-  }
-  
-  .agriguard-landing .faq-title {
-    position: relative;
-    flex: 1;
-    margin-top: -1px;
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 600;
-    color: var(--accent-2);
-    font-size: 28px;
-    letter-spacing: 0;
-    line-height: 32px;
-    text-align: left;
-    margin-bottom: 0px;
-  }
-  
-  .agriguard-landing .frame-8 {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 16px;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-    display: flex;
-    position: relative;
-  }
-  
-  .agriguard-landing .faq-subtitle {
-    position: relative;
-    align-self: stretch;
-    margin-top: -1px;
-    font-family: "Montserrat-SemiBold", Helvetica;
-    color: var(--paragraph);
-    font-size: 20px;
-    letter-spacing: var(--main-text-p1-400-letter-spacing);
-    line-height: var(--main-text-p1-400-line-height);
-    text-align: left;
-    font-weight: 300;
-  }
-
-  #contact-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- }
-
- .contact-content {
+.agriguard-landing .frame {
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-between; 
-  margin-top: 40px; 
+  position: relative;
 }
 
- .agriguard-landing .contact-text {
+.agriguard-landing .text-2 {
   display: flex;
   flex-direction: column;
-  width: 45%;
+  height: 208px;
+  align-items: flex-start;
+  gap: 16px;
+
+  width: 100%;
+}
+
+.agriguard-landing .vector-2 {
+
+  width: 100%;
+  height: 1px;
+  margin-left: -0.5px;
+  margin-right: -0.5px;
+  object-fit: cover;
+}
+
+.agriguard-landing .button-2 {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 40px;
+
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--white);
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.agriguard-landing .text-wrapper-34 {
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-weight: 600;
+  color: var(--accent-1);
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.agriguard-landing .text-wrapper-35 {
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-weight: 600;
+  color: var(--accent-2);
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.agriguard-landing .text-4 {
+  display: flex;
+  flex-direction: column;
+  width: 746px;
   align-items: flex-start;
   justify-content: center;
   gap: 24px;
-  text-align:left;
+}
+
+/* faq starts here */
+
+.faq-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.agriguard-landing .faq-box {
+  background-color: var(--white);
+  height: 20rem;
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  gap: 1.5rem;
+  border-radius: 16px;
+  box-shadow: var(--drop-shadow);
+  margin-bottom: 2rem;
+}
+
+.agriguard-landing .faq-icon {
+  width: 40px;
+  height: 40px;
+}
+
+
+.faq-title {
+  font-size: 1.75rem;
+  width: 85%;
+  color: var(--accent-2);
+  font-weight: var(--main-text-p1-400-font-weight);
+}
+
+.agriguard-landing .faq-subtitle {
+  color: var(--paragraph);
+  font-size: 1.75ch;
+  letter-spacing: var(--main-text-p1-400-letter-spacing);
+  line-height: var(--main-text-p1-400-line-height);
+  text-align: left;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+/* ends here */
+
+/* contact seciton starts here */
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-text {
   margin-bottom: 20px;
 }
-  
-  .agriguard-landing .contact-form {
-    /* display: flex; */
-    flex-direction: column;
-    width: 45%;
-    align-items: flex-start;
-    gap: 40px;
-    padding: 80px 40px 56px;
-    background-color: var(--white);
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: var(--drop-shadow-2);
-    align-items: center;
-  }
-  
-  .agriguard-landing .frame-9 {
-    align-items: flex-start;
-    gap: 40px;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .agriguard-landing .contact-input-title {
-    position: relative;
-    align-self: stretch;
-    margin-top: -1px;
-    font-family: var(--main-text-p1-400-font-family);
-    font-weight: var(--main-text-p1-400-font-weight);
-    color: var(--paragraph);
-    font-size: var(--main-text-p1-400-font-size);
-    letter-spacing: var(--main-text-p1-400-letter-spacing);
-    line-height: var(--main-text-p1-400-line-height);
-    font-style: var(--main-text-p1-400-font-style);
-  }
 
-  .agriguard-landing .contact-1 {
-    display: flex;
-    flex-direction: column;
-    width: 232px;
-    align-items: flex-start;
-    gap: 8px;
-    position: relative;
-  }
-  
-  .agriguard-landing .contact-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    position: relative;
-    flex: 1;
-    flex-grow: 1;
-  }
-  
-  .agriguard-landing .contact-3 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-  }
+.contact-form {
+  padding: 80px 40px 56px;
+  background-color: var(--white);
+  border-radius: 16px;
+  box-shadow: var(--drop-shadow-2);
+}
 
-  .contact-1, .contact-2, .contact-3 {
-    margin-bottom: 20px;
-  }
+.frame-9 {
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-  .agriguard-landing .vector-3 {
-    margin-bottom: -0.5px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    height: 1px;
-    margin-left: -0.5px;
-    margin-right: -0.5px;
-    object-fit: cover;
-  }
-  
-  .agriguard-landing .contact-button {
-    all: unset;
-    box-sizing: border-box;
-    justify-content: center;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-    background-color: var(--accent-1);
-    display: flex;
-    align-items: center;
-    padding: 24px 40px;
-    border-radius: 100px;
-    overflow: hidden;
-    margin-top: 20px;
-  }
-  
-  .agriguard-landing .contact-button-text {
-    position: relative;
-    width: 308px;
-    margin-top: -1px;
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 600;
-    color: var(--white);
-    font-size: 21px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 24px;
-  }
-  
-  .agriguard-landing .contact-title {
-    position: relative;
-    width: 543px;
-    margin-top: -1px;
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 400;
-    color: transparent;
-    font-size: 60px;
-    letter-spacing: 0;
-    line-height: 72px;
-    margin-bottom: 0px;
-    text-align: left;
-  }
-  
-  .agriguard-landing .contact-subtitle {
-    position: relative;
-    align-self: stretch;
-    font-family: "Montserrat-Medium", Helvetica;
-    font-weight: 200;
-    color: var(--paragraph);
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 24px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: left;
-  }
-  
-  #solution {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    align-items: center; 
-  }
-  
+.contact-input-title {
+  margin-top: -1px;
+  font-family: var(--main-text-p1-400-font-family);
+  font-weight: var(--main-text-p1-400-font-weight);
+  color: var(--paragraph);
+  font-size: var(--main-text-p1-400-font-size);
+  letter-spacing: var(--main-text-p1-400-letter-spacing);
+  line-height: var(--main-text-p1-400-line-height);
+  font-style: var(--main-text-p1-400-font-style);
+}
 
-  .agriguard-landing .option {
-    width: 624px;
-    height: 370px;
-  }
+.contact-1 {
+  display: flex;
+  flex-direction: column;
+  width: 232px;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+}
 
-  #solution-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    align-items: center; 
-  }
+.contact-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
 
+.contact-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.contact-1,
+.contact-2,
+.contact-3 {
+  margin-bottom: 20px;
+}
+
+.vector-3 {
+  margin-bottom: -0.5px;
+  width: 100%;
+  height: 1px;
+  margin-left: -0.5px;
+  margin-right: -0.5px;
+  object-fit: cover;
+}
+
+.contact-button {
+  all: unset;
+  box-sizing: border-box;
+  justify-content: center;
+
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--accent-1);
+  display: flex;
+  align-items: center;
+  padding: 24px 40px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.contact-button-text {
+  position: relative;
+  width: 308px;
+  margin-top: -1px;
+  font-weight: 600;
+  color: var(--white);
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.contact-title {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  text-align: left;
+}
+
+.contact-subtitle {
+  margin-top: 1rem;
+  font-weight: 200;
+  color: var(--paragraph);
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+  width: 85%;
+  text-align: left;
+}
+
+/* ends here */
+
+#solution {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.agriguard-landing .option {
+  width: 624px;
+  height: 370px;
+}
+
+#solution-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
 
 .solution-list {
   display: flex;
-  justify-content: center; 
-  gap: 40px; 
+  justify-content: center;
+  gap: 40px;
 }
 
 .solution-box {
-  text-align: center;       
-  background-color: #fff;    
+  text-align: center;
+  background-color: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 20px;            
-  max-width: 300px; 
+  padding: 20px;
   border-radius: 25px;
-  height: 300px;
-  
 }
 
 .solution-number {
   font-weight: 600;
   margin-top: 30px;
-  margin-bottom: 30px;   
+  margin-bottom: 30px;
   font-size: 72px;
   color: #2eb85c;
   line-height: 74.9px;
   letter-spacing: 0;
-  font-family: "Montserrat-SemiBold", Helvetica;
 }
 
 .solution-title {
-  font-family: "Montserrat-Bold", Helvetica;
   color: var(--accent-2);
   font-weight: 700;
   font-size: 24px;
@@ -894,140 +696,73 @@ font-weight: 200;
 }
 
 .solution-description {
-  font-size: 16px;  
-  line-height: 1.5; 
-  font-family: "Montserrat-Regular", Helvetica;
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 200;
-  color: #043A3A;
-  margin-bottom: 10px; 
+  color: #043a3a;
+  margin-bottom: 10px;
   letter-spacing: 0;
   font-size: 24px;
 }
 
-  #pricing-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+/* pricing section begins here */
+
+#pricing-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #package-container {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   margin-bottom: 20px;
   gap: 4rem;
 }
 
-/* #package-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 24px;
-}
 
-.package-row {
-  display: flex;
-  justify-content: space-between; 
-  width: 100%; 
-  margin-bottom: 20px;
-  gap: 4rem;
-} */
-
-.package-1 {
-  /* box-shadow: var(--drop-shadow); */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.package-1, .package-2 {
   width: 460px;
 }
 
-.package-2 {
-  /* box-shadow: var(--drop-shadow); */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 460px;
-
-}
-
-.agriguard-landing .package-header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  padding: 40px;
-  position: relative;
-  align-self: stretch;
-  width: 90%;
-  flex: 0 0 auto;
-  background-color: var(--accent-2);
+.pricing-package-header {
   border-radius: 24px 24px 0px 0px;
-  overflow: hidden;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-color: var(--white);
-}
-  
-.agriguard-landing .package-header-2 {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  padding: 40px;
-  align-self: stretch;
-  width: 90%;
-  flex: 0 0 auto;
-  background-color: var(--accent-1);
-  border-radius: 24px 24px 0px 0px;
-  overflow: hidden;
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-color: var(--white);
-  display: flex;
-  position: relative;
-}
-  
-.agriguard-landing .package-header-content {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  gap: 16px;
-  align-self: stretch;
   width: 100%;
-  flex: 0 0 auto;
-  display: flex;
-  position: relative;
+  padding: 40px;
 }
-  
-.agriguard-landing .package-title {
-  position: relative;
-  align-self: stretch;
-  margin-top: -1px;
-  font-family: "Montserrat-SemiBold", Helvetica;
+
+.package-header {
+  background-color: var(--accent-2);
+}
+
+.package-header-2 {
+  background-color: var(--accent-1);
+}
+
+.package-title {
   font-weight: 600;
   color: var(--white);
   font-size: 28px;
   letter-spacing: 0;
   line-height: 32px;
+  margin-inline: auto;
 }
 
-.agriguard-landing .package-price {
-  position: relative;
-  align-self: stretch;
-  font-family: "Montserrat-SemiBold", Helvetica;
+.package-price {
   font-weight: 600;
   color: var(--white);
   font-size: 67px;
   letter-spacing: 0;
   line-height: 72px;
+  margin-block: 1rem;
 }
 
-.agriguard-landing .package-duration {
-  position: relative;
-  align-self: stretch;
-  font-family: "Mulish-Medium", Helvetica;
+.package-duration {
   font-weight: 500;
   color: var(--white);
   font-size: 20px;
@@ -1035,70 +770,50 @@ font-weight: 200;
   line-height: 24px;
 }
 
-.agriguard-landing .package-body {
-  background-color: var(--accent-2);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
+.pricing-package-body {
   padding: 40px;
-  position: relative;
-  align-self: stretch;
-  width: 90%;
-  flex: 0 0 auto;
+  width: 100%;
   border-radius: 0px 0px 24px 24px;
-  overflow: hidden;
 }
 
-.agriguard-landing .package-body-2 {
-  background-color: var(--accent-1);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  padding: 40px;
-  position: relative;
-  align-self: stretch;
-  width: 90%;
-  flex: 0 0 auto;
-  border-radius: 0px 0px 24px 24px;
-  overflow: hidden;
+.package-body {
+  background-color: var(--accent-2);
 }
-  
-.agriguard-landing .package-body-content {
+
+.package-body-2 {
+  background-color: var(--accent-1);
+}
+
+.package-body-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 40px;
-  position: relative;
-  align-self: stretch;
+
   width: 100%;
   flex: 0 0 auto;
 }
 
-.agriguard-landing .package-feature-list {
+.package-feature-list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  position: relative;
-  align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
 }
 
-.agriguard-landing .package-feature {
+.package-feature {
   display: flex;
   align-items: center;
   gap: 16px;
-  position: relative;
-  align-self: stretch;
+
   width: 100%;
   flex: 0 0 auto;
 }
 
-.agriguard-landing .package-feature-text {
+.package-feature-text {
   position: relative;
   flex: 1;
   margin-top: -1px;
@@ -1111,7 +826,7 @@ font-weight: 200;
   font-style: var(--main-text-p1-400-font-style);
 }
 
-.agriguard-landing .package-icon {
+.package-icon {
   position: relative;
   width: 25.5px;
   height: 25.5px;
@@ -1120,6 +835,10 @@ font-weight: 200;
   margin-left: -0.75px;
 }
 
+/* Pricing ends here */
+
+
+/* testimonial starts here */
 .agriguard-landing .rating-container {
   align-items: center;
   gap: 4px;
@@ -1130,321 +849,253 @@ font-weight: 200;
   position: relative;
 }
 
-.cta-section {
-  /* width: 1485px;
-  height: 629px; */
-}
+/* ends here */
+
+/* hackathon prize section begins here */
 
 .cta-container {
   position: relative;
+  height: 630px;
+  background-image: url('img/Ignitia_Prize.png');
+  z-index: 1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
-.cta-image {
-  width: 100%; 
-  height: auto;
-  height: 629px;
-  object-fit: cover;
-  display: block;
-}
-  
-.cta-overlay {
-  position: absolute; 
-  top: 0;
-  left: 0;
+.cta-container::before {
+  position: absolute;
+  content: "";
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.65);
+  top: 0;
+  z-index: -1;
 }
 
-.cta-content {
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white; 
-  z-index: 1; /* Ensure the content is above the overlay */
-}  
+.cta-content{ 
+  width: 60rem;
+  padding-left: 2.5rem;
+}
 
 .cta-text {
-  font-family: "Montserrat-Bold", Helvetica;
-  width: 100%;
   font-weight: 700;
-  color: #ffffff;
+  color: white;
   letter-spacing: 0;
   line-height: 74.9px;
-  text-align: left;
   font-size: 72px;
-  margin-bottom: 30px; 
-  display: flex;
 }
 
 .cta-button {
-  display: flex;
   padding: 20px 30px;
-  background-color: #2eb85c; 
-  color: #fff; 
+  background-color: #2eb85c;
+  color: #fff;
   text-decoration: none;
   border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 1.15rem;
   transition: background-color 0.3s ease;
-  width: 100px;
+  margin-top: 1rem;
 }
 
-  
-  .agriguard-landing .client {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 40px 40px;
-    margin-bottom: 100px; 
-    margin-top: 60px;
-  }
-  
-  .agriguard-landing .testimonial {
-    display: flex;
-    flex-direction: column;
-    width: 340px;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 24px;
-    padding: 24px;
-    position: relative;
-    background-color: var(--white);
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: var(--drop-shadow);
-  }
-  
-  .agriguard-landing .frame-10 {
-    flex-direction: column;
-    width: 340px;
-    height: 48px;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 8px;
-    display: flex;
-    position: relative;
-  }
-  
-  .agriguard-landing .client-name {
-    position: relative;
-    align-self: stretch;
-    margin-top: -1px;
-    font-family: "Montserrat-SemiBold", Helvetica;
-    font-weight: 600;
-    color: var(--accent-2);
-    font-size: 21px;
-    letter-spacing: 0;
-    line-height: 24px;
-  }
-  
+/* ends here */
 
-  
-  .agriguard-landing .star {
-    position: relative;
-    width: 15.22px;
-    height: 14.47px;
-  }
-  
-  .agriguard-landing .testimonial-text {
-    position: relative;
-    align-self: stretch;
-    font-family: var(--main-text-p1-400-font-family);
-    font-weight: 200;
-    color: var(--accent-2);
-    font-size: 20px;
-  }
-  
-  .agriguard-landing .client-role {
-    position: relative;
-    align-self: stretch;
-    font-family: "Mulish-BoldItalic", Helvetica;
-    font-weight: 700;
-    font-style: italic;
-    color: var(--paragraph);
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: 24px;
-  }
-
-  
-  .agriguard-landing .overlap-9 {
-    position: relative;
-    width: 1483px;
-    height: 629px;
-  }
-  
-  
-  .agriguard-landing .group-10 {
-    width: 183px;
-    height: 50px;
-  }
-  
-  .agriguard-landing .text-wrapper-52 {
-    font-family: "Raleway-SemiBold", Helvetica;
-    font-weight: 600;
-    color: #ffffff;
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-
-  .agriguard-landing .about-section {
-    display: flex;
-    align-items: start;
-    width: 1355px;
-    height: 860px;
-  }
-
-  .about-content {
-    flex: 1; /* Take up remaining space */
-  }
-  
-  .agriguard-landing .about-title {
-    width: 675px;
-    font-family: "Montserrat-Bold", Helvetica;
-    font-weight: 700;
-    color:var(--accent-2);
-    font-size: 72px;
-    letter-spacing: 0;
-    line-height: 74.9px;
-    margin-bottom: 10px;
-    text-align: left;
-    margin-left: 50px;
-  }
-  
-  .agriguard-landing .about-text {
-    width: 695px;
-    font-family: "Montserrat-Regular", Helvetica;
-    font-weight: 300;
-    color: var(--accent-2);
-    font-size: 22px;
-    letter-spacing: 0;
-    line-height: 30px;
-    text-align: left;
-    margin-left: 50px;
-    margin-top: 30px;
-  }
-
-  .agriguard-landing .about-text-bold {
-    font-family: "Montserrat-Bold", Helvetica;
-    font-weight: 700;
-  }
-
-  .agriguard-landing .about-image {
-    width: 681px;
-    height: 860px;
-    object-fit: cover;
-    /* max-width: 100%; Ensure image doesn't overflow */
-    margin-left: 20px; 
-  }
-
-  #features-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.agriguard-landing .client {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 40px 40px;
+  margin-bottom: 100px;
+  margin-top: 60px;
 }
 
+.agriguard-landing .testimonial {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  padding: 24px;
+  position: relative;
+  background-color: var(--white);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--drop-shadow);
+}
+
+.agriguard-landing .frame-10 {
+  flex-direction: column;
+  width: 340px;
+  height: 48px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  display: flex;
+  position: relative;
+}
+
+.agriguard-landing .client-name {
+
+  margin-top: -1px;
+  font-weight: 600;
+  color: var(--accent-2);
+  font-size: 21px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.agriguard-landing .star {
+  position: relative;
+  width: 15.22px;
+  height: 14.47px;
+}
+
+.agriguard-landing .testimonial-text {
+
+  font-family: var(--main-text-p1-400-font-family);
+  font-weight: 200;
+  color: var(--accent-2);
+  font-size: 20px;
+}
+
+.agriguard-landing .client-role {
+
+  font-weight: 700;
+  font-style: italic;
+  color: var(--paragraph);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+
+.agriguard-landing .about-section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.agriguard-landing .about-title {
+  font-weight: 700;
+  color: var(--accent-2);
+  font-size: 72px;
+  letter-spacing: 0;
+  line-height: 74.9px;
+  margin-bottom: 10px;
+}
+
+.agriguard-landing .about-text {
+  font-weight: 300;
+  color: var(--accent-2);
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.agriguard-landing .about-text-bold {
+  font-weight: 700;
+}
+
+.agriguard-landing .about-image {
+  height: 860px;
+}
+
+/* ends here */
+
+/* features start here */
 .features-list {
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: center; 
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .feature-row {
   display: flex;
-  justify-content: space-between; 
-  width: 100%; 
-  margin-bottom: 20px; 
+  gap: 2.5rem;
+  width: 100%;
+  margin-bottom: 2.5rem;
 }
 
 .feature-box {
-  flex: 1; 
-  margin-right: 20px;
+  flex: 1;
   background-color: #ffffff;
   border-radius: 25px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 20px; 
-  text-align: center; 
+  padding: 20px;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  margin-bottom: 20px;
+  align-items: center;
   justify-content: center;
-  max-width: calc(45% - 1px); 
 }
 
 .feature-icon {
   width: 82px;
   height: 82px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
-
-
 .feature-title {
-
-  font-family: "Montserrat-Bold", Helvetica;
   font-weight: 700;
   font-size: 24px;
   letter-spacing: 0;
   line-height: 30px;
-  color: #043A3A;
-text-align: center;
-font-style: normal;
-margin-top: 25px;
-    margin-bottom: 24px
+  color: #043a3a;
+  text-align: center;
+  font-style: normal;
+  margin-top: 25px;
+  margin-bottom: 24px;
 }
-
 
 .features-subtitle {
   color: var(--accent-2);
-text-align: center;
-font-family: Montserrat;
-font-size: 22px;
-font-style: normal;
-font-weight: 300;
-line-height: 30px; 
-width: 500px;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+  width: 500px;
 }
 
 .feature-icon {
   width: 82px;
   height: 82px;
   margin-bottom: 20px;
-} 
+}
+
+/* end here */
 
 .agriguard-landing .footer-logo-text {
   font-size: 32px;
   letter-spacing: 3.2px;
-  font-family: "Montserrat-Bold", Helvetica;
   font-weight: 700;
   color: #2eb85c;
   line-height: normal;
 }
-  
+
 .footer {
   display: flex;
-  justify-content: space-around;
-  background-color: #f0f0f0;
-  padding: 20px;
+  justify-content: center;
+  padding-inline: 2.5rem;
+  gap: 2.5rem;
 }
 
 .footer-column {
   flex: 1;
-  margin-top: 50px
+  margin-top: 50px;
 }
 
 .footer-logo {
   font-size: 32px;
   letter-spacing: 3.2px;
-  font-family: "Montserrat-Bold", Helvetica;
   font-weight: 700;
   color: #2eb85c;
   line-height: normal;
@@ -1454,31 +1105,27 @@ width: 500px;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
-
-  color: #FFF;
-  font-family: "Montserrat-Bold", Helvetica;
-font-size: 28px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  color: #fff;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .footer-company-info {
-  color: #FFF;
-  font-family: "Montserrat-Bold", Helvetica;
+  color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
 }
 
 .footer-link {
-  text-decoration: none; 
+  text-decoration: none;
   margin-bottom: 20px;
 }
 
 .contact-section div {
-  color: #FFF;
-  font-family: "Montserrat-Bold", Helvetica;
+  color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
@@ -1489,10 +1136,127 @@ line-height: normal;
   margin-right: 5px;
 }
 
-  /* CSS - Mobile & Tablets */
+/* CSS - Mobile & Tablets */
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  .solution-box {
+    width: 100%;
+  }
+
+  .header-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .header-links a {
+    font-size: 1.25rem;
+  }
+
+  .feature-row {
+    display: block;
+  }
+
+  .feature-box {
+    width: 70% !important;
+    margin-bottom: 1rem;
+    margin-inline: auto;
+  }
+
+  .contact-form {
+    padding: 0px;
+  }
+
+  .hero-text {
+    font-size: calc(2.5vw + 20px);
+    line-height: 70px;
+  }
+
+  .about-content {
+    width: 70%;
+  }
+
+  .about-title {
+    font-size: calc(2.5vw + 20px) !important;
+    line-height: 70px;
+  }
+
+  .about-text p {
+    font-size: calc(.75vw + 12px) !important;
+    line-height: 30px;
+    width: fit-content;
+  }
+
+  .farm-hero-img {
+    width: 100%;
+  }
+
+  .hero-section img {
+    width: 50%;
+  }
+
+  .hero-subtitle {
+    font-size: calc(1.5vw + 12px);
+    line-height: 50px;
+  }
+
+  .contact-content {
+    display: block;
+  }
+
+  .button-text, .hero-button2, .hero-button1 {
+    padding: .5rem;
+    border-radius: 1rem;
+    text-align: center;
+  }
+
+  .solution-title {
+    font-size: 1.15rem;
+  }
+
+  .solution-description {
+    font-size: 1rem;
+  }
+
+  .feature-box {
+    width: 100%;
+  }
+
+  .faq-box {
+    height: 100% !important;
+  }
+
+  .client{
+    gap: 1rem !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .problem-highlight, .story-suffix {
+    font-size: 1.5rem;
+  }
+
+  .problem-text-light, .problem-text-bold {
+    font-size: 1.75rem;
+  }
+
+  .contact-title {
+    font-size: 2.5rem;
+  }
+
+  .contact-title, .contact-subtitle {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .callout-section {
+    flex: 1 !important;
+  }
+}
 
 @media only screen and (max-width: 768px) {
-  
   .solution-box {
     max-width: 100%; /* One box per row for smaller screens */
   }
@@ -1511,6 +1275,5 @@ line-height: normal;
   .agriguard-landing .problem-callout {
     padding: 40px 64px;
     width: 55%;
-}
-
+  }
 }
