@@ -1137,8 +1137,45 @@ textarea {
 }
 
 /* CSS - Mobile & Tablets */
+@media screen and (max-width: 425px) {
+  *{
+    border: 1px solid rgb(17, 255, 0);
+  }
+  .solution-box {
+    max-width: 100%; /* One box per row for smaller screens */
+  }
+
+  .faq-box {
+    flex-basis: 100%; /* Full width on smaller screens */
+    margin-right: 0; /* Remove right margin on smaller screens */
+  }
+
+  .problem-text {
+    font-size: 40px;
+    width: 60%;
+    margin-bottom: 50px;
+  }
+
+  .agriguard-landing .problem-callout {
+    padding: 40px 64px;
+    width: 55%;
+  }
+
+  .agriguard-landing .problem-subtitle {
+    font-size: 30px !important;
+  }
+
+  .footer-company-info {
+    font-size: 10px;
+}
+  
+}
 
 @media screen and (min-width: 800px) and (max-width: 1024px) {
+  /* *{
+    border: 1px solid red;
+  } */
+
   .solution-box {
     width: 100%;
   }
@@ -1256,24 +1293,4 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .solution-box {
-    max-width: 100%; /* One box per row for smaller screens */
-  }
 
-  .faq-box {
-    flex-basis: 100%; /* Full width on smaller screens */
-    margin-right: 0; /* Remove right margin on smaller screens */
-  }
-
-  .problem-text {
-    font-size: 40px;
-    width: 60%;
-    margin-bottom: 50px;
-  }
-
-  .agriguard-landing .problem-callout {
-    padding: 40px 64px;
-    width: 55%;
-  }
-}
